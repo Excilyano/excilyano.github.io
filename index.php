@@ -5,6 +5,7 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+	<?php include('template/bandeau.html'); >
 	<iframe src="template/bandeau.html"></iframe>
 	<div class="imgcontainer"></div>
 	<div class="header"></div>
