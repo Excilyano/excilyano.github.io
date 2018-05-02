@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<head>
+	<title>TestWeb</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/script.js"></script>
+</head>
+<body class="iframe">
+	<ul class="onglets">
+		<li class="titreOnglets">Excilyano</li>
+		<a href="../index.html" target="_parent"><li class="lien">Accueil</li></a>
+		<a href="../html/blog.html" target="_parent"><li class="lien">Actualités</li></a>
+		<a href="../html/games.html" target="_parent">
+			<li class="lien" onmouseover="montrerOnglet('jeux')" onmouseout="cacherOnglet('jeux')">Mes jeux</li>
+		</a>
+		<ul class="sousOnglet" id="jeux" onmouseover="montrerOnglet('jeux')" onmouseout="cacherOnglet('jeux')">
+			<a href="../html/games/signal.html" target="_parent"><li class="lien">Signal</li></a>
+			<li class="lien">Le Cube Inverseur de Gravité</li>
+			<li class="lien">Inhuman rampage</li>
+		</ul>
+		<li class="footer">When life gives you dev skills, make&nbsp;videogames</li>
+	</ul>
+</body>
