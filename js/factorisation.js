@@ -14,14 +14,14 @@ function bandeau(prefix) {
 		'<ul class="onglets"> \
 			<div class="signature"> \
 				<li class="titreOnglets">excilyano.me</li> \
-				<li class="selecteur">v</li> \
+				<li class="selecteur">v</li>\
 				<li class="footer">When life gives you dev skills, make&nbsp;videogames</li> \
 			</div> \
 			<a href="'+ prefix +'index.html"><li class="lien">Accueil</li></a> \
 			<a href="'+ prefix +'about.html"><li class="lien">A propos</li></a> \
 			<a href="'+ prefix +'sds.html"><li class="lien">Sweet Dreams Studio</li></a> \
 			<a href="'+ prefix +'blog.html"><li class="lien">Actualités</li></a> \
-			<a href="'+ prefix +'games.html"><li class="lien" onmouseover="montrerOnglet(\'jeux\')" onmouseout="cacherOnglet(\'jeux\')">Mes jeux</li></a> \
+			<a href="'+ prefix +'games.html"><li class="lien surlien" onmouseover="montrerOnglet(\'jeux\')" onmouseout="cacherOnglet(\'jeux\')">Mes jeux</li></a> \
 			<a href="'+ prefix +'contact.html"><li class="lien">Me contacter</li></a> \
 			<ul class="sousOnglet" id="jeux" onmouseover="montrerOnglet(\'jeux\')" onmouseout="cacherOnglet(\'jeux\')"> \
 				<a href="'+ prefix +'games/signal.html"><li class="lien">Signal</li></a> \

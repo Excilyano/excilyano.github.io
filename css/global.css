@@ -1,0 +1,103 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+.content {
+	z-index: 98;
+}
+
+.article {
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 70px;
+	background-color: rgb(238, 238, 238);
+}
+
+.article>p {
+	text-align: justify;
+	padding: 0px 5% 0px 5%;
+}
+
+.article h1 {
+	padding-left: 4%;
+	font-size: 1.2em;
+}
+
+.article .date {
+	font-style: italic;
+	font-size: 0.8em;
+	margin-top: -10px;
+	padding-left: 8%;
+}
+
+.imgcontainer {
+	position: fixed;
+	left : 0px;
+	top : 0px;
+	width: 100%;
+	z-index: -99;
+	height: 350px;
+	overflow: hidden;
+	background-image: url("../rsc/img/signal.png");
+	background-repeat: repeat-x;
+}
+
+.title {
+	position : absolute;
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 100%;
+	top: 280px;
+	left: 0px;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	margin-left : auto;
+	margin-right : auto;
+	z-index: 98;
+}
+
+#bandeau {
+	position: fixed;
+	left: 0px;
+	width: 100%;
+	top: 0px;
+	z-index: 99;
+}
+
+.header {
+	margin-bottom: 360px;
+}
+
+.surlien {
+	border-bottom: solid 1px #8888FF;
+}
+
+.refs {
+	padding: 0px 5% 0px 5%;
+}
+
+.refs>p {
+	font-size: 0.9em;
+	padding-bottom: 0px;
+	padding-left: 1%;
+	border-bottom: solid 1px;
+}
+
+.refs>a {
+	text-decoration: none;
+	color: black;
+	border: solid rgb(7, 0, 36) 1px;
+	border-radius: 0.5em;
+	padding: 0px 5px 0px 5px;
+	background-color: rgb(172, 153, 255);
+	font-weight: bold;
+}
+
+.refs>a:hover {
+	background-color: rgb(5, 0, 36);
+	color: white;
+	transition: all 0.6s;
+}
