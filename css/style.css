@@ -54,7 +54,7 @@
 	padding: 5px 0px 5px 0px;
 	color: rgba(255, 255, 255, 0.9);
 	font-weight: bold;
-	width: 30%;
+	width: 16%;
 	text-align: center;
 	border-radius: 3px;
 }
@@ -83,7 +83,7 @@
 .onglets .sousOnglet .lien {
 	display:inline-block;
 	padding: 10px 0px 10px 0px;
-	width : 30%;
+	width : 20%;
 	vertical-align: top;
 }
 

@@ -11,22 +11,36 @@ if (document.getElementById("bandeau")) {
 
 function bandeau(prefix) {
 	document.getElementById("bandeau").innerHTML =
-		'<ul class="onglets"> \
-			<div class="signature"> \
-				<li class="titreOnglets">excilyano.me</li> \
-				<li class="selecteur">v</li>\
-				<li class="footer">When life gives you dev skills, make&nbsp;videogames</li> \
+		'<nav class="navbar navbar-inverse navbar-fixed-top"> \
+		<div class="container-fluid"> \
+			<div class="navbar-header"> \
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> \
+				<span class="icon-bar"></span> \
+				<span class="icon-bar"></span> \
+				<span class="icon-bar"></span> \
+			</button> \
+			<a class="navbar-brand" href="#">Excilyano.me</a> \
 			</div> \
-			<a href="'+ prefix +'index.html"><li class="lien">Accueil</li></a> \
-			<a href="'+ prefix +'about.html"><li class="lien">A propos</li></a> \
-			<a href="'+ prefix +'sds.html"><li class="lien">Sweet Dreams Studio</li></a> \
-			<a href="'+ prefix +'blog.html"><li class="lien">Actualités</li></a> \
-			<a href="'+ prefix +'games.html"><li class="lien surlien" onmouseover="montrerOnglet(\'jeux\')" onmouseout="cacherOnglet(\'jeux\')">Mes jeux</li></a> \
-			<a href="'+ prefix +'contact.html"><li class="lien">Me contacter</li></a> \
-			<ul class="sousOnglet" id="jeux" onmouseover="montrerOnglet(\'jeux\')" onmouseout="cacherOnglet(\'jeux\')"> \
-				<a href="'+ prefix +'games/signal.html"><li class="lien">Signal</li></a> \
-				<a href="'+ prefix +'games/cig.html"><li class="lien">Le Cube Inverseur de Gravité</li></a> \
-				<a href="'+ prefix +'games/inhuman.html"><li class="lien">Inhuman rampage</li></a> \
+			<div class="collapse navbar-collapse" id="myNavbar"> \
+			<ul class="nav navbar-nav"> \
+				<li><a href="'+ prefix +'index.html">Accueil</a></li> \
+				<li><a href="'+ prefix +'about.html">A propos</a></li> \
+				<li><a href="'+ prefix +'sds.html">Sweet Dreams Studio</a></li> \
+				<li><a href="'+ prefix +'blog.html">Actualités</a></li> \
+				<li class="dropdown"> \
+				<a class="dropdown-toggle" data-toggle="dropdown" href="'+ prefix +'games.html">Mes jeux&nbsp;<span class="caret"></span></a> \
+					<ul class="dropdown-menu"> \
+						<li><a href="'+ prefix +'games/signal.html">Signal</a></li> \
+						<li><a href="'+ prefix +'games/cig.html">Le Cube Inverseur de Gravité</a></li> \
+						<li><a href="'+ prefix +'games/inhuman.html">Inhuman rampage</a></li> \
+					</ul> \
+				</li> \
+				<li><a href="'+ prefix +'contact.html">Me contacter</a></li> \
 			</ul> \
-		</ul>';
+			<ul class="nav navbar-nav navbar-right"> \
+				<p class="navbar-text">When life gives you dev skills, make&nbsp;videogames</p> \
+			</ul> \
+			</div> \
+		</div> \
+		</nav>'
 }
